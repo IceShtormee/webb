@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <p><a href="../index.html"> До списку лабораторних робіт</a></p>
+        </nav>
+        <h1>Лабораторна робота №1: Основи HTML</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Форма реєстрації</h2>
+
+        <form action="https://webhook.site/62965f6a-ba7d-4c37-a78e-b339d5df1fe9" method="POST">
+
+            <p>
+                <label for="first-name">Ім'я:</label><br>
+                <input type="text" id="first-name" name="first_name" required>
+            </p>
+
+            <p>
+                <label for="last-name">Прізвище:</label><br>
+                <input type="text" id="last-name" name="last_name" required>
+            </p>
+
+            <p>
+                <label for="user-email">Електронна пошта:</label><br>
+                <input type="email" id="user-email" name="email" required>
+            </p>
+
+            <p>
+                <label for="user-password">Пароль:</label><br>
+                <input type="password" id="user-password" name="password" required>
+            </p>
+
+            <p>
+                <label for="confirm-password">Підтвердження паролю:</label><br>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </p>
+
+            <p>
+                <label for="birth-date">Дата народження:</label><br>
+                <input type="date" id="birth-date" name="birth_date">
+            </p>
+
+            <p>
+                <label for="user-gender">Стать:</label><br>
+                <select id="user-gender" name="gender">
+                    <option value="">-- Оберіть варіант --</option>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                    <option value="other">Інше</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Зареєструватися">
+            </p>
+
+        </form>
+    </main>
+
+</body>
+</html>
