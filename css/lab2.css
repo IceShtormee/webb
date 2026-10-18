@@ -14,7 +14,7 @@ div > p {
     font-weight: 600;
 }
 
-[href^="https"] {
+a[href^="https"] {
     color: green;
 }
 
