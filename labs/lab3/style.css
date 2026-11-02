@@ -145,6 +145,7 @@ body {
   display: flex;
   gap: 10px;
   padding-bottom: 16px;
+  overflow-x: auto;
 }
 
 .tag {
