@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #21243D;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 856px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 27px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 33px;
+}
+
+nav li {
+    white-space: nowrap;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #FF6464;
+}
+
+.hero {
+    padding: 60px 0 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 38px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF6464;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #e05252;
+}
+
+.hero-avatar img {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -5px 13px 0px 0px #EDF7FA;
+}
+
+.recent-posts {
+    background-color: #EDF7FA;
+    padding: 30px 0 40px 0;
+}
+
+.recent-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-posts-header h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.view-all {
+    color: #00A8CC;
+    font-size: 16px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.post-card {
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.post-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.post-meta {
+    font-size: 18px;
+    color: #21243D;
+    margin-bottom: 18px;
+}
+
+.post-meta .divider {
+    margin: 0 10px;
+    color: #000000;
+}
+
+.post-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.post-card li {
+    margin-bottom: 6px;
+}
+
+.post-card li a {
+    color: #00A8CC;
+}
+
+.post-card li a:hover {
+    text-decoration: underline;
+}
+
+.featured-works {
+    padding: 30px 0;
+}
+
+.featured-works h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.work-card {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.work-img img {
+    width: 246px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.work-info h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.work-meta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 18px;
+}
+
+.year-badge {
+    background-color: #142850;
+    color: #FFFFFF;
+    font-weight: 900;
+    padding: 2px 10px;
+    border-radius: 16px;
+    font-size: 18px;
+}
+
+.category {
+    color: #8695A4;
+    font-size: 20px;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 26px;
+}
+
+.social-links a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #21243D;
+}
+
+.social-links a:hover {
+    color: #00A8CC;
+}
+
+footer p {
+    font-size: 14px;
+    color: #21243D;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 30px 0 50px 0;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-avatar img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        flex-direction: column;
+    }
+
+    .work-img img {
+        width: 100%;
+        height: auto;
+    }
+}

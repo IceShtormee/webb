@@ -226,7 +226,6 @@ body {
   background: transparent;
 }
 
-/* Правий блок (Субота + Неділя) */
 .weekend-container {
   display: flex;
   flex-direction: column;

@@ -3,74 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя перша сторінка</title>
+    <title>Перший сайт — Назарій Добровольський</title>
+    <link rel="stylesheet" href="lab5/css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Особистий веб сайт студента Назарія Добровольського</h1>
-        <hr>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#practicals">Практичні</a></li>
+                    <li><a href="#labs">Лабораторні</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <p>
-            <a href="index.html">Головна</a> | 
-            <a href="#about">Про мене</a> | 
-            <a href="#practicals">Практичні роботи</a> | 
-            <a href="#labs">Лабораторні заняття</a>
-        </p>
-        <hr>
-    </nav>
-
     <main>
-        <section id="about">
-            <h2>Про мене</h2>
-            <img src="png/cat.png" alt="Кіт" width="300">
-            <p>Мене звати Назарій.</p>
-            <p>Пошта: st9770218@stud.duikt.edu.ua</p>
-            <p>Я вчуся в університеті і це мій перший сайт на HTML.</p>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Привіт, я Назарій,<br>студент та розробник</h1>
+                    <p>
+                        Я навчаюся в університеті і це мій перший сайт на HTML/CSS. 
+                        Цікавлюся веброзробкою, програмною інженерією та створенням інтерфейсів.
+                    </p>
+                    <a href="st9770218@stud.duikt.edu.ua" class="btn">Написати листом</a>
+                </div>
+                <div class="hero-avatar">
+                    <img src="lab5/photos/photo.jpg" alt="Назарій Добровольський" loading="lazy">
+                </div>
+            </div>
         </section>
 
-        <section id="practicals">
-            <h2>Практичні роботи</h2>
-            <ul>
-                <li>
-                    <a href="practicals/practice_1.html">Практична робота 1</a>
-                </li>
-                 <li>
-                    <a href="practicals/pz_4/index.html">Практична робота 4</a>
-                </li>
-            </ul>
+        <section class="recent-posts">
+            <div class="container">
+                <div class="recent-posts-header">
+                    <h2>Навчальні роботи</h2>
+                    <a href="#works" class="view-all">Дивитися всі</a>
+                </div>
+
+                <div class="posts-grid">
+                    <article id="practicals" class="post-card">
+                        <h3>Практичні роботи</h3>
+                        <div class="post-meta">
+                            <span>2026</span>
+                            <span class="divider">|</span>
+                            <span>HTML, CSS</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="practicals/index.html">Практична робота 1</a>
+                            </li>
+                            <li>
+                                <a href="practicals/pz_4/index.html">Практична робота 4</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article id="labs" class="post-card">
+                        <h3>Лабораторні заняття</h3>
+                        <div class="post-meta">
+                            <span>2026</span>
+                            <span class="divider">|</span>
+                            <span>HTML, CSS</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="labs/lab_1.html">Лабораторна робота 1</a>
+                            </li>
+                            <li>
+                                <a href="labs/lab2.html">Лабораторна робота 2</a>
+                            </li>
+                            <li>
+                                <a href="labs/lab3/index.html">Лабораторна робота 3</a>
+                            </li>
+                            <li>
+                                <a href="labs/lab4/index.html">Лабораторна робота 4</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="labs">
-            <h2>Лабораторні заняття</h2>
-            <ul>
-                <li>
-                    <a href="labs/lab_1.html">Лабораторна робота 1</a>
-                </li>
-                <li>
-                    <a href="labs/lab2.html">Лабораторна робота 2</a>
-                </li>
-                <li>
-                    <a href="labs/lab3/index.html">Лабораторна робота 3</a>
-                </li>
-                <li>
-                    <a href="labs/lab4/index.html">Лабораторна робота 4</a>
-                </li>
-            </ul>
+        <section id="works" class="featured-works">
+            <div class="container">
+                <h2>Featured works</h2>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="lab5/photos/photo1.jpg" alt="Laboratory Work 1" loading="lazy">
+                    </div>
+                    <div class="work-info">
+                        <h3><a href="labs/lab_1.html">laboratory work 1</a></h3>
+                        <div class="work-meta">
+                            <span class="year-badge">2026</span>
+                            <span class="category">Task</span>
+                        </div>
+                        <p>Create a registration form.</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="lab5/photos/photo2.jpg" alt="Laboratory Work 2" loading="lazy">
+                    </div>
+                    <div class="work-info">
+                        <h3><a href="labs/lab2.html">Laboratory Work 2</a></h3>
+                        <div class="work-meta">
+                            <span class="year-badge">2026</span>
+                            <span class="category">Task</span>
+                        </div>
+                        <p>Layout and styling of page elements using modern CSS properties.</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">
+                        <img src="lab5/photos/photo3.jpg" alt="Laboratory Work 3" loading="lazy">
+                    </div>
+                    <div class="work-info">
+                        <h3><a href="labs/lab3/index.html">laboratory work 3</a></h3>
+                        <div class="work-meta">
+                            <span class="year-badge">2026</span>
+                            <span class="category">Task</span>
+                        </div>
+                        <p>Creating a replica of the YouTube homepage using Flexbox.</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p><b>Мої контакти:</b></p>
-        <p>Email: st9770218@stud.duikt.edu.ua</p>
-        <p>
-            <a href="https://github.com/IceShtormee" target="_blank">Мій GitHub</a>
-        </p>
-        <p>Роки навчання: 2025–2029</p>
-        <p>© 2026 Назарій Добровольський.</p>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/IceShtormee" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="st9770218@stud.duikt.edu.ua">Email</a>
+            </div>
+            <p>Роки навчання: 2025–2029</p>
+            <p>© 2026 Назарій Добровольський. Всі права захищено.</p>
+        </div>
     </footer>
 
 </body>
