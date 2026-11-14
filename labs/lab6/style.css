@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f1f7e9;
+  color: #28452c;
+}
+ 
+.scene {
+  position: relative;
+  max-width: 650px;
+  height: 350px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 3px solid #557b46;
+  border-radius: 12px;
+  background-color: #b9e6fa;
+}
+
+.sun {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffd75e;
+}
+
+.cloud {
+  position: absolute;
+  top: 70px;
+  width: 130px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  animation: cloudMove 12s linear infinite;
+}
+
+.grass {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #78b957;
+}
+
+.pokemon {
+  position: absolute;
+  bottom: 65px;
+  left: calc(50% - 96px);
+  animation: jump 1s ease-in-out infinite;
+}
+
+.sprite {
+  width: 192px;
+  height: 192px;
+  background-image: url('assets/pikachu-simple.png');
+  background-repeat: no-repeat;
+  background-size: 768px 192px;
+  image-rendering: pixelated;
+  animation: spriteFrames 1s steps(4) infinite;
+}
+
+@keyframes spriteFrames {
+  from { background-position: 0 0; }
+  to { background-position: -768px 0; }
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
+
+@keyframes cloudMove {
+  from { left: -130px; }
+  to { left: 100%; }
+}
