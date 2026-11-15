@@ -49,7 +49,7 @@ body {
 .pokemon {
   position: absolute;
   bottom: 65px;
-  left: calc(50% - 96px);
+  left: 230px;
   animation: jump 1s ease-in-out infinite;
 }
 
@@ -62,17 +62,17 @@ body {
   image-rendering: pixelated;
   animation: spriteFrames 1s steps(4) infinite;
 }
-
+/* Кадри спрайту Пікачу */
 @keyframes spriteFrames {
   from { background-position: 0 0; }
   to { background-position: -768px 0; }
 }
-
+/* Анімація стрибка */
 @keyframes jump {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-40px); }
 }
-
+/* Рух хмари */
 @keyframes cloudMove {
   from { left: -130px; }
   to { left: 100%; }
