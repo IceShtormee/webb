@@ -6,7 +6,7 @@ body {
   background-color: #f1f7e9;
   color: #28452c;
 }
- 
+
 .scene {
   position: relative;
   max-width: 650px;
@@ -62,16 +62,19 @@ body {
   image-rendering: pixelated;
   animation: spriteFrames 1s steps(4) infinite;
 }
+
 /* Кадри спрайту Пікачу */
 @keyframes spriteFrames {
   from { background-position: 0 0; }
   to { background-position: -768px 0; }
 }
+
 /* Анімація стрибка */
 @keyframes jump {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-40px); }
 }
+
 /* Рух хмари */
 @keyframes cloudMove {
   from { left: -130px; }
