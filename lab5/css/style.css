@@ -32,6 +32,12 @@ nav {
     align-items: center;
 }
 
+.hamburger-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -236,17 +242,78 @@ footer {
 }
 
 .social-links a {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 30px;
     color: #21243D;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
 }
 
 .social-links a:hover {
-    color: #00A8CC;
+    color: #FF6464;
+    transform: translateY(-3px);
 }
 
 footer p {
     font-size: 14px;
     color: #21243D;
     margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding: 20px 0 40px 0;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-avatar img {
+        width: 170px;
+        height: 170px;
+        max-width: 100%;
+    }
+
+    .recent-posts-header {
+        justify-content: center;
+    }
+
+    .recent-posts-header .view-all {
+        display: none;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        flex-direction: column;
+    }
+
+    .work-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .work-info h3 {
+        font-size: 24px;
+    }
 }
