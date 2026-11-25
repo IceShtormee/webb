@@ -1,0 +1,46 @@
+.card {
+  padding: 40px 28px;
+  text-align: center;
+  background-color: $card-color;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba($accent-color, 0.25);
+  }
+
+  &_theme_gold {
+    border: 2px solid $accent-color;
+    box-shadow: 0 0 25px rgba($accent-color, 0.15);
+  }
+
+  &__year {
+    display: inline-block;
+    padding: 5px 14px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $bg-color;
+    background-color: $accent-color;
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: $accent-color;
+  }
+
+  &__icon {
+    margin-bottom: 18px;
+    font-size: 64px;
+    color: $tree-color;
+    filter: drop-shadow(0 0 12px rgba($tree-color, 0.4));
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

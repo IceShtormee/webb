@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: $font-main;
+  color: $text-color;
+  background: radial-gradient(circle at top, $bg-gradient, $bg-color);
+
+  &__card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
